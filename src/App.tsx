@@ -1,17 +1,14 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
-import SideBar from "./components/SideBar";
-
-
+import { Route, Routes } from "react-router-dom";
+import Authorization from "./pages/Authorization";
+import Workspace from "./pages/Workspace";
 
 export default function App() {
   return (
     <main className="flex-1 h-full w-full flex">
-      <SideBar />
-      <div className="flex flex-col w-full">
-        <Header />
-        <Main />
-      </div>
+      <Routes>
+        <Route path="/" element={<Authorization />} />
+        <Route path="/workspace" element={<Workspace />} />
+      </Routes>
     </main>
   );
 }

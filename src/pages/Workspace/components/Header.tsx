@@ -1,5 +1,5 @@
-import { lock, menu, notification, person, search } from '../assets/assets';
-import Icon from './Icon';
+import { lock, menu, notification, person, search } from '../../../assets/assets';
+import Icon from '../../../components/Icon';
 
 export default function Header() {
    return (

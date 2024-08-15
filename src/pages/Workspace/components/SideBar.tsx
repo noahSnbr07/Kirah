@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { logo, logo_square } from "../assets/assets.ts";
+import { logo, logo_square } from "../../../assets/assets.ts";
 
 export default function SideBar() {
    return (
