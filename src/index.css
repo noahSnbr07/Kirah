@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply text-base;
+}
+
+* {
+  @apply box-border;
+  @apply m-0;
+  @apply p-0;
+  font-family: Quicksand-Regular;
+}
+
+html,
+body,
+#root,
+main {
+  @apply bg-background;
+  @apply min-h-screen;
+  @apply w-screen;
+  @apply flex;
+  @apply text-white;
+}
+
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url('./assets/fonts/Quicksand-Regular.ttf');
+}
+
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url('./assets/fonts/Quicksand-Bold.ttf');
+}
+
+@font-face {
+  font-family: Teko-Regular;
+  src: url('./assets/fonts/Teko-Regular.ttf');
+}
+
+@font-face {
+  font-family: Teko-Bold;
+  src: url('./assets/fonts/Teko-Bold.ttf');
+}
+
+input:focus {
+  outline: none;
+}
